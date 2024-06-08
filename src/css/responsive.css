@@ -3,10 +3,50 @@
         header {
             padding-inline: 3rem;
 
-            .menu,
+            /* .menu, */
             .menu-btn {
                 display: none;
 
+            }
+
+            .menu {
+                width: 300px;
+                position: fixed;
+                flex-direction: column;
+                top: 0;
+                right: -300px;
+                bottom: 0;
+                background-color: #fff;
+                font-size: 20px;
+                padding: 20px;
+                box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+                transition: all .4s;
+
+                .close-btn {
+                    display: block;
+                    background-color: transparent;
+                    text-align: right;
+                    font-size: 35px;
+                    border: none;
+                    outline: none;
+                    cursor: auto;
+
+                    i {
+                        cursor: pointer;
+                    }
+                }
+
+                li {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    color: black;
+                }
+
+                .active-menu {
+                    border-color: blueviolet !important;
+                }
             }
 
             .toggle-menu-btn {
@@ -19,27 +59,16 @@
 @media screen and (max-width:768px) {
     #intro {
         height: 120vh !important;
-        /* padding-bottom: 7rem !important; */
-
-        .container {
-            .intro-content {
-                /* padding-top: 7rem; */
-
-            }
-        }
     }
 }
 
 @media screen and (max-width:576px) {
     #intro {
-        .intro-cover {
-            /* height: 111% !important; */
-        }
+
 
         .container {
 
             .intro-content {
-                /* padding-top: 10rem; */
 
                 h1 {
                     font-size: 2rem !important;

@@ -41,6 +41,10 @@ body {
         .menu {
             display: flex;
 
+            .close-btn {
+                display: none;
+            }
+
             li {
                 padding: 5px 20px;
 
