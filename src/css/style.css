@@ -59,18 +59,37 @@ body {
             color: #fff;
         }
 
+        .toggle-menu-btn {
+            background-color: transparent;
+            font-size: 25px;
+            border: none;
+            outline: none;
+            display: none;
+        }
+
 
 
     }
 
     .header-active {
         background-color: #fff;
-        padding: 0.5rem 7rem;
+        padding-block: 0.5rem;
+        box-shadow: 0 0 6px -1px black;
 
         a {
             color: #000;
 
         }
+
+        .active-menu {
+            border-color: blueviolet !important;
+        }
+
+        .menu-btn {
+            color: #fff;
+        }
+
+
     }
 
     main {
@@ -96,6 +115,8 @@ body {
                 position: relative;
 
                 .intro-content {
+                    margin-bottom: 40px;
+
                     h1 {
                         font-size: 2.5rem;
                         font-weight: 700;
@@ -123,6 +144,7 @@ body {
                 }
 
                 form {
+
                     background-color: #fff;
                     padding: 40px;
                     border-radius: 7px;
