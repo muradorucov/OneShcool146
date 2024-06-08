@@ -18,7 +18,7 @@
 
 @media screen and (max-width:768px) {
     #intro {
-        height: 120vh !important;
+        height: 100vh !important;
         /* padding-bottom: 7rem !important; */
 
         .container {
